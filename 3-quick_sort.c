@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void swap_ints(int *d, int *b);
+void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
@@ -10,12 +10,12 @@ void quick_sort(int *array, size_t size);
  * @a: The first integer to swap.
  * @b: The second integer to swap.
  */
-void swap_ints(int *d, int *b)
+void swap_ints(int *a, int *b)
 {
 	int tmp;
 
-	tmp = *d;
-	*d = *b;
+	tmp = *a;
+	*a = *b;
 	*b = tmp;
 }
 
